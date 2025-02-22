@@ -1,32 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MONTOYA - The Memecoin That Breaks the Mold</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MONTOYA - La Memecoin que Rompe Moldes</title>
   <style>
     body {
       background-color: #1e1e1e;
       color: #f2f2f2;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
     }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px;
+    header {
+      background-color: #ff6f61;
+      padding: 20px;
       text-align: center;
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      color: #ff6f61;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
-    p {
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #f2f2f2;
+      margin: 0 15px;
+      text-decoration: none;
       font-size: 1.2em;
-      line-height: 1.6;
-      margin-bottom: 20px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .hero {
+      background-image: url('isla_tentaciones.jpg'); /* Imagen alusiva a "La Isla de las Tentaciones" */
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.5em;
+      margin: 10px 0 20px;
     }
     .cta-button {
       background-color: #ff6f61;
@@ -34,32 +62,88 @@
       padding: 15px 30px;
       border: none;
       border-radius: 5px;
-      font-size: 1em;
+      font-size: 1.2em;
       text-decoration: none;
-      display: inline-block;
+      cursor: pointer;
       transition: background-color 0.3s ease;
     }
     .cta-button:hover {
       background-color: #e55a4d;
     }
-    footer {
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
       margin-top: 40px;
-      font-size: 0.8em;
+    }
+    .feature {
+      background-color: #333;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      flex: 1 1 30%;
+      text-align: center;
+    }
+    .feature h3 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+    .feature p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #333;
       color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+      .feature {
+        flex: 1 1 80%;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>MONTOYA</h1>
-    <p>The Memecoin That Breaks the Mold</p>
-    <p>
-      MONTOYA emerges as the perfect fusion of humor, innovation, and community spirit. Born from the irreverence and passion of those who believe in a decentralized future, MONTOYA is more than just a cryptocurrency – it's a movement. Powered by cutting-edge blockchain technology, it offers lightning-fast transactions, minimal fees, and exclusive rewards for its holders. What truly sets MONTOYA apart is its unique spirit: every token is an invitation to laugh, dream, and challenge the status quo.
-    </p>
-    <a href="#" class="cta-button">Join the MONTOYA Revolution</a>
-    <footer>
-      <p>&copy; 2025 MONTOYA. All rights reserved.</p>
-    </footer>
+    <p>La Memecoin que Rompe Moldes</p>
+  </header>
+  <nav>
+    <a href="#about">Acerca de</a>
+    <a href="#features">Características</a>
+    <a href="#community">Comunidad</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+  <div class="container">
+    <section class="hero" id="about">
+      <h2>Bienvenido a MONTOYA</h2>
+      <p>La criptomoneda inspirada en la pasión y el espíritu de "La Isla de las Tentaciones".</p>
+      <a href="#" class="cta-button">Únete a la Revolución MONTOYA</a>
+    </section>
+    <section class="features" id="features">
+      <div class="feature">
+        <h3>Transacciones Rápidas</h3>
+        <p>Con tecnología blockchain de última generación, MONTOYA garantiza transacciones casi instantáneas.</p>
+      </div>
+      <div class="feature">
+        <h3>Bajas Comisiones</h3>
+        <p>Disfruta de tarifas mínimas en cada operación, permitiéndote maximizar tus inversiones.</p>
+      </div>
+      <div class="feature">
+        <h3>Comunidad Activa</h3>
+        <p>Únete a una comunidad vibrante y apasionada, siempre lista para apoyarte en tu viaje cripto.</p>
+      </div>
+    </section>
   </div>
+  <footer>
+    <p>&copy; 2025 MONTOYA. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
